@@ -1,0 +1,183 @@
+body{
+  font-family: 'Trebuchet MS', Arial;
+  background-color: #ddd;
+}
+
+
+/* CONFIG */
+
+.img-chica{
+  max-width: 40px;
+}
+
+.boton{
+  color: white;
+  background-color: green;
+  border-radius: 9px;
+  padding: 15px;
+  border: none;
+}
+
+/* ----------- */
+
+.layout{
+  width: 100%;
+  height: auto;
+
+  display: grid;
+  grid-template-areas: 
+      "header header header header"
+      "nav nav nav nav"
+      "content content content lateral"
+      "footer footer footer footer"
+  ;
+
+  grid-template-rows: 500px 100px auto 70px;
+
+
+}
+
+.header{
+  grid-area: header;
+  color: green;
+  font-size:larger;
+  text-align: center;
+  background-color: rgba(146, 236, 250, 0.384);
+
+}
+
+.header > a > img{
+  margin-top: 50px;
+}
+
+.header > h1{
+  margin: 0;
+}
+
+/* NAVEGACION */
+
+.nav{
+  grid-area: nav;
+  background-color: orange;
+  text-align: center;
+}
+
+
+.nav > a{
+  text-decoration: none;
+  margin: 25px;
+  line-height: 100px;
+
+}
+
+.nav > a > img{
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.login{
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 9px;
+  cursor: pointer;
+  border: none;
+}
+
+
+/* CONTENT */
+
+.content{
+  grid-area: content;
+  background-color: rgba(146, 236, 250, 0.384);
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.article{
+  flex-grow: 1;
+  background: rgb(102, 189, 102);   
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px #ddd;
+  margin: 20px;
+  padding: 60px 25px;
+  text-align: center;
+  color: black;
+  max-width: 300px;
+}
+
+.article h1{
+  font-family: Impact;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 9px;
+}
+
+.descripcion{
+  padding: 10px;
+  border-radius: 9px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: yellowgreen;
+}
+
+.precio{
+  font-size: 30px;
+  font-family: Impact;
+  background-color: orange;
+  color: green;
+  padding: 15px;
+}
+
+.article img{
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.comprar{
+  width: 45%;
+  background-color: #03228f;
+}
+
+.space{
+  display: block;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.lateral{
+  grid-area: lateral;
+  float: right;
+  border-left: 1px solid #ddd;
+  background:rgb(102, 189, 102);      
+  padding-left: 10px;
+}
+
+.agregar{
+  background-color: rgba(37, 208, 234, 0.384);
+  margin: 30px 10px auto auto;
+  padding: 20px;
+  border-radius: 9px;
+  color: white;
+}    
+
+
+.agregar > form > input, textarea{
+  display: block;
+  margin-top: 5px;
+  border-color: white;
+  width: 100%;
+  padding: 5px;
+  border-radius: 9px;
+}
+
+.footer{
+  grid-area: footer;
+  text-align: center;
+  line-height: 70px;
+}
+
+
